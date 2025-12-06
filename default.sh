@@ -32,16 +32,15 @@ WORKFLOWS=(
 
 CHECKPOINT_MODELS=(
     #"https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16"
-    https://huggingface.co/Xeno443/StableMondAI-SDG/resolve/main/StableMondAI-SDG.safetensors
+    "https://huggingface.co/Xeno443/StableMondAI-SDG/resolve/main/StableMondAI-SDG.safetensors"
 )
 
 UNET_MODELS=(
 )
 
 LORA_MODELS=(
-    https://civitai.com/api/download/models/1715330?type=Model&format=SafeTensor
-    https://civitai.com/api/download/models/1965505?type=Model&format=SafeTensor
-    
+    "https://civitai.com/models/1452858/slopslayer-lora-shiny-horrible-average-ai-style-to-put-in-negatives"
+    "https://civitai.com/models/99619/control-lora-collection"
 )
 
 VAE_MODELS=(
