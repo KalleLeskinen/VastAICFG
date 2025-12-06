@@ -18,6 +18,12 @@ PIP_PACKAGES=(
 NODES=(
     "https://github.com/ltdrdata/ComfyUI-Manager"
     "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/rgthree/rgthree-comfy"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    "https://github.com/martijnat/comfyui-previewlatent"
+    "https://github.com/chrisgoringe/cg-image-filter"
+    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+    
 )
 
 WORKFLOWS=(
@@ -33,6 +39,9 @@ UNET_MODELS=(
 )
 
 LORA_MODELS=(
+    https://civitai.com/api/download/models/1715330?type=Model&format=SafeTensor
+    https://civitai.com/api/download/models/1965505?type=Model&format=SafeTensor
+    
 )
 
 VAE_MODELS=(
