@@ -43,13 +43,10 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/1491395"
     "https://civitai.com/api/download/models/1773764"
     "https://civitai.com/api/download/models/1352041"
-    ## ANATOMY OPTIONS
     "https://civitai.com/api/download/models/1320383"
     "https://civitai.com/api/download/models/1322451"
     "https://civitai.com/api/download/models/1457585"
-    ## STYLE
-    "https://civitai.com/api/download/models/1240667"
-    
+    "https://civitai.com/api/download/models/1240667"   
 )
 
 VAE_MODELS=(
@@ -140,7 +137,6 @@ function provisioning_get_files() {
 }
 
 function provisioning_print_header() {
-    printf "CAI TOKEN = %s\n" "$CIVITAI_TOKEN"
     printf "\n##############################################\n#                                            #\n#          Provisioning container            #\n#                                            #\n#         This will take some time           #\n#                                            #\n# Your container will be ready on completion #\n#                                            #\n##############################################\n\n"
 }
 
