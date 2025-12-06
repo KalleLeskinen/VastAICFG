@@ -40,6 +40,16 @@ UNET_MODELS=(
 LORA_MODELS=(
     "https://civitai.com/models/1452858/slopslayer-lora-shiny-horrible-average-ai-style-to-put-in-negatives"
     "https://civitai.com/models/99619/control-lora-collection"
+    "https://civitai.com/models/1320989/feral-animals"
+    "https://civitai.com/models/1259893/request-princess-luna-mlp-ponyillus"
+    "https://civitai.com/models/1200728?modelVersionId=1352041"
+    ## ANATOMY OPTIONS
+    "https://civitai.com/models/1173463?modelVersionId=1320383"
+    "https://civitai.com/models/1173463?modelVersionId=1322451"
+    "https://civitai.com/models/1173463?modelVersionId=1457585"
+    ## STYLE
+    "https://civitai.com/models/1076338/zaush-artstyle-ponyillustrious"
+    
 )
 
 VAE_MODELS=(
