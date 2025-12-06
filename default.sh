@@ -38,17 +38,17 @@ UNET_MODELS=(
 )
 
 LORA_MODELS=(
-    "https://civitai.com/api/download/models/1715330?type=Model&format=SafeTensor"
-    "https://civitai.com/api/download/models/1965505?type=Model&format=SafeTensor"
-    "https://civitai.com/api/download/models/1491395?type=Model&format=SafeTensor"
-    "https://civitai.com/api/download/models/1773764?type=Model&format=SafeTensor"
-    "https://civitai.com/api/download/models/1352041?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1715330"
+    "https://civitai.com/api/download/models/1965505"
+    "https://civitai.com/api/download/models/1491395"
+    "https://civitai.com/api/download/models/1773764"
+    "https://civitai.com/api/download/models/1352041"
     ## ANATOMY OPTIONS
-    "https://civitai.com/api/download/models/1320383?type=Model&format=SafeTensor"
-    "https://civitai.com/api/download/models/1322451?type=Model&format=SafeTensor"
-    "https://civitai.com/api/download/models/1457585?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1320383"
+    "https://civitai.com/api/download/models/1322451"
+    "https://civitai.com/api/download/models/1457585"
     ## STYLE
-    "https://civitai.com/api/download/models/1240667?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1240667"
     
 )
 
