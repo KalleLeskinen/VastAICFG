@@ -38,17 +38,17 @@ UNET_MODELS=(
 )
 
 LORA_MODELS=(
-    "https://civitai.com/models/1452858/slopslayer-lora-shiny-horrible-average-ai-style-to-put-in-negatives"
-    "https://civitai.com/models/99619/control-lora-collection"
-    "https://civitai.com/models/1320989/feral-animals"
-    "https://civitai.com/models/1259893/request-princess-luna-mlp-ponyillus"
-    "https://civitai.com/models/1200728?modelVersionId=1352041"
+    "https://civitai.com/api/download/models/1715330?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1965505?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1491395?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1773764?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1352041?type=Model&format=SafeTensor"
     ## ANATOMY OPTIONS
-    "https://civitai.com/models/1173463?modelVersionId=1320383"
-    "https://civitai.com/models/1173463?modelVersionId=1322451"
-    "https://civitai.com/models/1173463?modelVersionId=1457585"
+    "https://civitai.com/api/download/models/1320383?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1322451?type=Model&format=SafeTensor"
+    "https://civitai.com/api/download/models/1457585?type=Model&format=SafeTensor"
     ## STYLE
-    "https://civitai.com/models/1076338/zaush-artstyle-ponyillustrious"
+    "https://civitai.com/api/download/models/1240667?type=Model&format=SafeTensor"
     
 )
 
