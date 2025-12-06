@@ -178,16 +178,35 @@ function provisioning_has_valid_civitai_token() {
 
 # Download from $1 URL to $2 file path
 function provisioning_download() {
-    if [[ -n $HF_TOKEN && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?huggingface\.co(/|$|\?) ]]; then
-        auth_token="$HF_TOKEN"
-    elif 
-        [[ -n $CIVITAI_TOKEN && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?civitai\.com(/|$|\?) ]]; then
-        auth_token="$CIVITAI_TOKEN"
-    fi
-    if [[ -n $auth_token ]];then
-        wget --header="Authorization: Bearer $auth_token" -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
+    local url="$1"
+    local dir="$2"
+    
+    # For Civitai URLs, handle redirect and get filename from final URL
+    if [[ "$url" == *"civitai.com"* ]]; then
+        printf "Getting filename from Civitai redirect...\n"
+        
+        # Follow redirect and get the final URL
+        local final_url=$(curl -sL -o /dev/null -w '%{url_effective}' "$url")
+        
+        # Extract filename from response-content-disposition parameter in the final URL
+        local filename=$(echo "$final_url" | sed -n 's/.*filename%3D%22\([^%]*\)%22.*/\1/p')
+        
+        # If we couldn't extract filename, try alternative method
+        if [[ -z "$filename" ]]; then
+            # Try to get it from the redirect location header
+            local redirect_url=$(curl -sI "$url" | grep -i "location:" | cut -d' ' -f2 | tr -d '\r')
+            filename=$(echo "$redirect_url" | sed -n 's/.*filename%3D%22\([^%]*\)%22.*/\1/p')
+        fi
+        
+        # If still no filename, use default
+        if [[ -z "$filename" ]]; then
+            filename="$(basename "$url").safetensors"
+        fi
+        
+        printf "Downloading as: %s\n" "$filename"
+        wget -O "${dir}/${filename}" "$url"
     else
-        wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
+        wget --header="Authorization: Bearer $HF_TOKEN" -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$dir" "$url"
     fi
 }
 
