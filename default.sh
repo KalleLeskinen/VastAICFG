@@ -123,6 +123,7 @@ function provisioning_get_files() {
 }
 
 function provisioning_print_header() {
+    printf "CAI TOKEN = " + $CIVITAI_TOKEN
     printf "\n##############################################\n#                                            #\n#          Provisioning container            #\n#                                            #\n#         This will take some time           #\n#                                            #\n# Your container will be ready on completion #\n#                                            #\n##############################################\n\n"
 }
 
