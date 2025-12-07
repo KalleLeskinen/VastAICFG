@@ -137,16 +137,17 @@ function provisioning_get_files() {
 }
 
 function simple_download() {
-
     if [[ -n $HF_TOKEN && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?huggingface\.co(/|$|\?) ]]; then
         auth_token="$HF_TOKEN"
     elif [[ -n $CIVITAI_TOKEN && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?civitai\.com(/|$|\?) ]]; then
         auth_token="$CIVITAI_TOKEN"
+    fi
 
     if [[ -n $auth_token ]];then
         wget --content-disposition --show-progress "$1?token=$auth_token" -P "$2"
     else
         wget --content-disposition --show-progress "$1" -P "$2"
+    fi
 }
 
 
