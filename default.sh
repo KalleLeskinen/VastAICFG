@@ -131,10 +131,24 @@ function provisioning_get_files() {
     printf "Downloading %s model(s) to %s...\n" "${#arr[@]}" "$dir"
     for url in "${arr[@]}"; do
         printf "Downloading: %s\n" "${url}"
-        provisioning_download "${url}" "${dir}"
+        simple_download "${url}" "${dir}"
         printf "\n"
     done
 }
+
+function simple_download() {
+
+    if [[ -n $HF_TOKEN && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?huggingface\.co(/|$|\?) ]]; then
+        auth_token="$HF_TOKEN"
+    elif [[ -n $CIVITAI_TOKEN && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?civitai\.com(/|$|\?) ]]; then
+        auth_token="$CIVITAI_TOKEN"
+
+    if [[ -n $auth_token ]];then
+        wget --content-disposition --show-progress "$1?token=$auth_token" -P "$2"
+    else
+        wget --content-disposition --show-progress "$1" -P "$2"
+}
+
 
 function provisioning_print_header() {
     printf "\n##############################################\n#                                            #\n#          Provisioning container            #\n#                                            #\n#         This will take some time           #\n#                                            #\n# Your container will be ready on completion #\n#                                            #\n##############################################\n\n"
