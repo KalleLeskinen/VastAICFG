@@ -42,13 +42,14 @@ UNET_MODELS=(
 LORA_MODELS=(
     "https://civitai.com/api/download/models/1715330"
     "https://civitai.com/api/download/models/1965505"
-    "https://civitai.com/api/download/models/1491395"
-    "https://civitai.com/api/download/models/1773764"
-    "https://civitai.com/api/download/models/1352041"
-    "https://civitai.com/api/download/models/1320383"
-    "https://civitai.com/api/download/models/1322451"
-    "https://civitai.com/api/download/models/1457585"
-    "https://civitai.com/api/download/models/1240667"   
+    #"https://civitai.com/api/download/models/1491395"
+    #"https://civitai.com/api/download/models/1773764"
+    #"https://civitai.com/api/download/models/1352041"
+    #"https://civitai.com/api/download/models/1320383"
+    #"https://civitai.com/api/download/models/1322451"
+    #"https://civitai.com/api/download/models/1457585"
+    #"https://civitai.com/api/download/models/1240667"
+    "https://civitai.com/api/download/models/2700844"
 )
 
 VAE_MODELS=(
