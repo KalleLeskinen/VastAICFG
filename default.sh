@@ -31,8 +31,9 @@ WORKFLOWS=(
 
 CHECKPOINT_MODELS=(
     #"https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16"
+    "https://civitai.com/api/download/models/2700844?type=Model&format=SafeTensor&size=pruned&fp=fp16"
     #"https://huggingface.co/Xeno443/StableMondAI-SDG/resolve/main/StableMondAI-SDG.safetensors"
-    "https://huggingface.co/SDGcollect/ModelCollection/resolve/main/bananaSplitzXL_vee4PointOh.safetensors"
+    #"https://huggingface.co/SDGcollect/ModelCollection/resolve/main/bananaSplitzXL_vee4PointOh.safetensors"
 )
 
 UNET_MODELS=(
