@@ -23,6 +23,8 @@ NODES=(
     "https://github.com/martijnat/comfyui-previewlatent"
     "https://github.com/chrisgoringe/cg-image-filter"
     "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
 )
 
 WORKFLOWS=(
@@ -42,20 +44,21 @@ UNET_MODELS=(
 LORA_MODELS=(
     "https://civitai.com/api/download/models/1715330"
     "https://civitai.com/api/download/models/1965505"
-    #"https://civitai.com/api/download/models/1491395"
-    #"https://civitai.com/api/download/models/1773764"
-    #"https://civitai.com/api/download/models/1352041"
-    #"https://civitai.com/api/download/models/1320383"
-    #"https://civitai.com/api/download/models/1322451"
-    #"https://civitai.com/api/download/models/1457585"
-    #"https://civitai.com/api/download/models/1240667"
-    "https://civitai.com/api/download/models/2700844"
+    "https://civitai.com/api/download/models/1491395"
+    "https://civitai.com/api/download/models/1773764"
+    "https://civitai.com/api/download/models/1352041"
+    "https://civitai.com/api/download/models/1320383"
+    "https://civitai.com/api/download/models/1322451"
+    "https://civitai.com/api/download/models/1457585"
+    "https://civitai.com/api/download/models/1240667"
+    "https://civitai.com/api/download/models/2371296"
 )
 
 VAE_MODELS=(
 )
 
 ESRGAN_MODELS=(
+    "https://civitai.com/api/download/models/164821"
 )
 
 CONTROLNET_MODELS=(
